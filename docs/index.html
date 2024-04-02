@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/common/header.css">
+    <link rel="stylesheet" href="css/common/nav.css">
+    <link rel="stylesheet" href="css/dashboard/style.css">
     <title>CS422</title>
 </head>
 <body>
@@ -13,19 +14,64 @@
                 <a href="https://jetsadawijit.github.io/university-bangkok-2023-3yr-sm2-cs462-naive-bayes-website">Home</a>
             </li>
             <li>
-                <a href="#">About</a>
-            </li>
-            <li>
                 <a href="https://github.com/JetsadaWijit/university-bangkok-2023-3yr-sm2-cs462-naive-bayes">repository</a>
             </li>
             <li>
-                <a href="#">Services</a>
-            </li>
-            <li>
-            <a href="#">Contact</a>
+            <a href="https://jetsadawijit.github.io/contact">Contact</a>
             </li>
         </ul>
     </nav>
+
+    <h1>Probability of Mr. A's Commute</h1>
+    <section class="equation">
+        <h2>Equation</h2>
+        <p>P(C|X) = P(X|C) * P(C) / P(X)</p>
+    </section>
+    <section class="question">
+        <h2>Question</h2>
+        <p>Mr. A has 4 ways to commute to work: car, bus, train, and boat.</p>
+        <ul>
+        <li>If Mr. A drives himself, there is a 30% chance of being late for work.</li>
+        <li>If Mr. A takes the bus, there is a 50% chance of being late for work.</li>
+        <li>If Mr. A takes the train, there is a 6% chance of being late for work.</li>
+        <li>If Mr. A takes the boat, there is a 10% chance of being late for work.</li>
+        </ul>
+        <p>One day, Mr. A arrives late for work. His boss wants to know:</p>
+        <ul>
+        <li>What is the probability that Mr. A drove to work?</li>
+        <li>What is the probability that Mr. A took the train to work?</li>
+        <li>What is the probability that Mr. A took the boat to work?</li>
+        </ul>
+        <p>The boss considers all of Mr. A's commuting options equally likely.</p>
+    </section>
+    <section class="answer">
+        <h2>Answer</h2>
+        <p>We will calculate the probability for each commute option using the provided equation.</p>
+        <ul>
+        <li>
+            <h3>Car</h3>
+            <p>Equation: (0.3 * (1/4)) / ((0.3 * (1/4)) + (0.5 * (1/4)) + (0.06 * (1/4)) + (0.1 * (1/4)))</p>
+            <p>Answer: 0.3125</p>
+        </li>
+        <li>
+            <h3>Bus</h3>
+            <p>Equation: (0.5 * (1/4)) / ((0.3 * (1/4)) + (0.5 * (1/4)) + (0.06 * (1/4)) + (0.1 * (1/4)))</p>
+            <p>Answer: 0.5208</p>
+        </li>
+        <li>
+            <h3>Train</h3>
+            <p>Equation: (0.06 * (1/4)) / ((0.3 * (1/4)) + (0.5 * (1/4)) + (0.06 * (1/4)) + (0.1 * (1/4)))</p>
+            <p>Answer: 0.0625</p>
+        </li>
+        <li>
+            <h3>Boat</h3>
+            <p>Equation: (0.1 * (1/4)) / ((0.3 * (1/4)) + (0.5 * (1/4)) + (0.06 * (1/4)) + (0.1 * (1/4)))</p>
+            <p>Answer: 0.1042</p>
+        </li>
+        </ul>
+    </section>
+
+    <h1><a href="https://colab.research.google.com/github/JetsadaWijit/university-bangkok-2023-3yr-sm2-cs462-naive-bayes/blob/master/NaiveBayes.ipynb"><u>Python Code in Colab</u></a></h1>
 
     <nav>
         <ul>
