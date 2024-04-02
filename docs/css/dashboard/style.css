@@ -1,0 +1,32 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+h1, h2, h3 {
+    text-align: center;
+  margin-top: 20px;
+}
+
+section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+  line-height: 1.5;
+}
+
+ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.answer li {
+  margin-bottom: 10px;
+}
+
+.answer h3 {
+  margin-top: 0;
+}
